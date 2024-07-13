@@ -1,11 +1,11 @@
 import 'package:flutter_riverpod/flutter_riverpod.dart';
-import 'package:google_intern_app/src/features/weather/application/sharedPref.dart';
-import 'package:google_intern_app/src/features/weather/data/weather_repository.dart';
-import 'package:google_intern_app/src/features/weather/domain/forecast/forecast_data.dart';
-import 'package:google_intern_app/src/features/weather/domain/weather/weather_data.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 
 import 'package:connectivity_plus/connectivity_plus.dart';
+import 'package:weather_app/src/features/weather/application/sharedPref.dart';
+import 'package:weather_app/src/features/weather/data/weather_repository.dart';
+import 'package:weather_app/src/features/weather/domain/forecast/forecast_data.dart';
+import 'package:weather_app/src/features/weather/domain/weather/weather_data.dart';
 
 final sharedPreferencesProvider = Provider<SharedPreferences>((ref) {
   throw UnimplementedError();

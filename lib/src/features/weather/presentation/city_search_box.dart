@@ -1,8 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
-import 'package:google_intern_app/src/constants/app_colors.dart';
-import 'package:google_intern_app/src/features/weather/application/providers.dart';
-import 'package:google_intern_app/src/features/weather/application/sharedPref.dart';
+import 'package:weather_app/src/features/weather/application/providers.dart';
+import 'package:weather_app/src/features/weather/application/sharedPref.dart';
 
 class CitySearchBox extends ConsumerStatefulWidget {
   const CitySearchBox({super.key});
@@ -65,41 +64,16 @@ class _CitySearchRowState extends ConsumerState<CitySearchBox> {
               ),
             ),
             IconButton(
-                onPressed: () async {
-                  await SharedPreferencesUtil()
-                      .saveCityName(_searchController.text);
-                  FocusScope.of(context).unfocus();
-                  ref.read(cityProvider.notifier).state =
-                      _searchController.text;
-                },
-                icon: Icon(
-                  Icons.search,
-                ))
-
-            // InkWell(
-            //   child: Container(
-            //     alignment: Alignment.center,
-            //     decoration: const BoxDecoration(
-            //       color: AppColors.accentColor,
-            //       borderRadius: BorderRadius.only(
-            //         topRight: Radius.circular(_radius),
-            //         bottomRight: Radius.circular(_radius),
-            //       ),
-            //     ),
-            //     child: Padding(
-            //       padding: const EdgeInsets.symmetric(horizontal: 15.0),
-            //       child: Text('search',
-            //           style: Theme.of(context).textTheme.bodyLarge),
-            //     ),
-            //   ),
-            // onTap: () async {
-            //   print(_searchController.text);
-            //   await SharedPreferencesUtil()
-            //       .saveCityName(_searchController.text);
-            //   FocusScope.of(context).unfocus();
-            //   ref.read(cityProvider.notifier).state = _searchController.text;
-            // },
-            // )
+              onPressed: () async {
+                await SharedPreferencesUtil()
+                    .saveCityName(_searchController.text);
+                FocusScope.of(context).unfocus();
+                ref.read(cityProvider.notifier).state = _searchController.text;
+              },
+              icon: Icon(
+                Icons.search,
+              ),
+            ),
           ],
         ),
       ),

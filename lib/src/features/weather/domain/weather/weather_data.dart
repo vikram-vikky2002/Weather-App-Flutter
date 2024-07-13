@@ -1,5 +1,5 @@
-import 'package:google_intern_app/src/features/weather/domain/temperature.dart';
-import 'package:google_intern_app/src/features/weather/domain/weather/weather.dart';
+import 'package:weather_app/src/features/weather/domain/temperature.dart';
+import 'package:weather_app/src/features/weather/domain/weather/weather.dart';
 
 class WeatherData {
   WeatherData({

@@ -1,5 +1,5 @@
-import 'package:google_intern_app/src/features/weather/domain/forecast/forecast.dart';
-import 'package:google_intern_app/src/features/weather/domain/weather/weather_data.dart';
+import 'package:weather_app/src/features/weather/domain/forecast/forecast.dart';
+import 'package:weather_app/src/features/weather/domain/weather/weather_data.dart';
 
 class ForecastData {
   const ForecastData(this.list);

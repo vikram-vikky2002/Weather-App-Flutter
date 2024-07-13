@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
-import 'package:google_intern_app/src/features/weather/application/providers.dart';
-import 'package:google_intern_app/src/features/weather/presentation/weather_page.dart';
 import 'package:shared_preferences/shared_preferences.dart';
+import 'package:weather_app/src/features/weather/application/providers.dart';
+import 'package:weather_app/src/features/weather/presentation/weather_page.dart';
 
 Future<void> main() async {
   WidgetsFlutterBinding.ensureInitialized();
@@ -31,7 +31,7 @@ class MyApp extends StatelessWidget {
       )
     ]);
     return MaterialApp(
-      title: 'Flutter Weather App',
+      title: 'Weather App',
       debugShowCheckedModeBanner: false,
       theme: ThemeData(
         brightness: Brightness.light,

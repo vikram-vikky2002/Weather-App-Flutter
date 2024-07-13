@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
-import 'package:google_intern_app/src/features/weather/application/providers.dart';
-import 'package:google_intern_app/src/features/weather/domain/weather/weather_data.dart';
-import 'package:google_intern_app/src/features/weather/presentation/weather_icon_image.dart';
+import 'package:weather_app/src/features/weather/application/providers.dart';
+import 'package:weather_app/src/features/weather/domain/weather/weather_data.dart';
+import 'package:weather_app/src/features/weather/presentation/weather_icon_image.dart';
 
 class CurrentWeather extends ConsumerWidget {
   const CurrentWeather({super.key});

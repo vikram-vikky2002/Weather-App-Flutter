@@ -1,12 +1,8 @@
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter/widgets.dart';
-import 'package:searchbar_animation/searchbar_animation.dart';
-
-import 'package:google_intern_app/src/constants/app_colors.dart';
-import 'package:google_intern_app/src/features/weather/presentation/city_search_box.dart';
-import 'package:google_intern_app/src/features/weather/presentation/current_weather.dart';
-import 'package:google_intern_app/src/features/weather/presentation/hourly_weather.dart';
+import 'package:weather_app/src/constants/app_colors.dart';
+import 'package:weather_app/src/features/weather/presentation/city_search_box.dart';
+import 'package:weather_app/src/features/weather/presentation/current_weather.dart';
+import 'package:weather_app/src/features/weather/presentation/hourly_weather.dart';
 
 class WeatherPage extends StatelessWidget {
   WeatherPage({
@@ -44,7 +40,7 @@ class WeatherPage extends StatelessWidget {
                           "Weather App",
                           style: TextStyle(
                             fontFamily: 'Outfit',
-                            fontSize: 25   ,
+                            fontSize: 25,
                           ),
                         ),
                       ),

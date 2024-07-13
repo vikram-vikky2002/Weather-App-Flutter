@@ -1,7 +1,7 @@
 library forecast;
 
 import 'package:freezed_annotation/freezed_annotation.dart';
-import 'package:google_intern_app/src/features/weather/domain/weather/weather.dart';
+import 'package:weather_app/src/features/weather/domain/weather/weather.dart';
 
 part 'forecast.g.dart';
 part 'forecast.freezed.dart';
