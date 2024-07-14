@@ -2,7 +2,7 @@
 # 🌤️ WeatherApp
 
  <div display="flex">
-    <img src ="./screenshots/logo.png" height=500>
+    <img src ="./screenshots/logo.png" height=150>
     <h4>Weather App</h4>
 </div>
 
