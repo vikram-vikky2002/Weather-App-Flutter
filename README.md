@@ -1,6 +1,11 @@
 
 # 🌤️ WeatherApp
 
+ <div display="flex">
+    <img src ="./screenshots/logo.png" height=500>
+    <h4>Weather App</h4>
+</div>
+
 Welcome to WeatherApp! This Flutter application fetches and displays current weather data and a 5-day weather forecast using the OpenWeatherMap API. It also stores the selected city locally so that the weather data can be displayed even when offline.
 
 ## ✨ Features
